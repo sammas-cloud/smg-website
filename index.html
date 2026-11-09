@@ -1,0 +1,903 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="assets/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="assets/favicon-512.png">
+<title>Sammas Industrial Supply</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<script>document.documentElement.classList.add("js")</script>
+<meta name="description" content="Sammas Multiconcept Global Industries Ltd, Lagos: cane molasses, urea, CO2 and dry ice, denatured and crude ethanol, agro commodities, palm oil and biochar for industry, agriculture and export.">
+<meta property="og:title" content="Sammas Multiconcept Global | Molasses, Urea, CO2 and Ethanol Supply, Nigeria">
+<meta property="og:description" content="Molasses, urea, CO2, ethanol, agro commodities and palm oil. Lagos, Nigeria.">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"Sammas Multiconcept Global Industries Ltd","identifier":"RC 1494274","email":"sammasmulticonceptglobal.ind@gmail.com","telephone":"+2347051863925","address":{"@type":"PostalAddress","streetAddress":"11 Oshogbo Street, Off Celestial Avenue, Ogudu, Kosofe LGA","addressLocality":"Lagos","addressCountry":"NG"},"makesOffer":[{"@type":"Offer","itemOffered":{"@type":"Product","name":"Cane molasses (bulk tanker)"}},{"@type":"Offer","itemOffered":{"@type":"Product","name":"Cane molasses (1,000 litre IBC)"}}]}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Public+Sans:wght@400;500;600&display=swap">
+<style>
+/* Layout concept: a supplier's spec sheet. Navy brand band on top, light or dark body below, a specification "ticket" beside the headline, plain tables and steps. */
+:root{
+  --navy:#13306F; --deep:#0F2557; --gold:#CAAA55; --cane:#086938;
+  --bg:#F5F8FC; --surface:#FFFFFF; --ink:#1A1F2B; --muted:#4C5871; --line:#D9E0EC; --tint:#EAF0F8;
+  --btn-bg:#13306F; --btn-fg:#FFFFFF; --link:#13306F; --warn:#FBF7EA; --warn-line:#CAAA55;
+  --head:'Montserrat','Segoe UI',Arial,sans-serif; --body:'Public Sans','Segoe UI',Arial,sans-serif;
+}
+
+
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.6;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+body{padding-left:0;padding-right:0}
+img{max-width:100%;display:block}
+a{color:var(--link)}
+h1,h2,h3{font-family:var(--head);line-height:1.15;margin:0;text-wrap:balance}
+p{margin:0 0 1rem}
+.wrap{max-width:1120px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.eyebrow{font-family:var(--head);font-weight:700;font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:.6rem}
+section{padding-block:64px}
+h2{font-size:clamp(1.55rem,3.2vw,2.15rem);font-weight:800;margin-bottom:.9rem;color:var(--ink)}
+.lede{max-width:62ch;color:var(--muted);font-size:1.05rem}
+
+/* header + hero (always navy) */
+header.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--deep);border-bottom:2px solid var(--gold)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:30;background:var(--deep)}
+.bar{display:flex;align-items:center;gap:20px;min-height:68px;flex-wrap:wrap;padding-block:8px}
+.bar img{height:44px;width:auto}
+nav{margin-left:auto;display:flex;gap:6px 22px;flex-wrap:wrap;align-items:center}
+nav a{color:#DCE5F6;text-decoration:none;font-weight:500;font-size:.92rem}
+nav a:hover{color:#fff;text-decoration:underline;text-underline-offset:4px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;padding:10px 20px;border-radius:6px;border:2px solid transparent;
+  font-family:var(--head);font-weight:700;font-size:.9rem;text-decoration:none;cursor:pointer;background:var(--btn-bg);color:var(--btn-fg)}
+.btn:hover{filter:brightness(1.08)}
+.btn.gold{background:var(--gold);color:var(--deep)}
+.btn.ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.5)}
+.btn.line{background:transparent;color:var(--link);border-color:var(--line)}
+:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.hero{background:linear-gradient(180deg,var(--deep),var(--navy));color:#fff;padding-block:64px 56px}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.9fr);gap:40px;align-items:center}
+.hero h1{font-size:clamp(2rem,5vw,3.25rem);font-weight:800;margin-bottom:1rem}
+.hero h1 span{color:var(--gold)}
+.hero p.sub{color:#D3DCEE;font-size:1.1rem;max-width:56ch}
+.cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:1.4rem}
+.ticket{background:#fff;color:#1A1F2B;border-radius:8px;padding:22px 24px;border-top:6px solid var(--gold);box-shadow:0 10px 30px rgba(0,0,0,.25)}
+.ticket h3{font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:#4C5871;margin-bottom:12px}
+.ticket dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:9px 18px;align-items:baseline}
+.ticket dt{font-size:.85rem;color:#4C5871}
+.ticket dd{margin:0;font-family:var(--head);font-weight:700;font-size:1.1rem;color:#13306F;text-align:right;font-variant-numeric:tabular-nums}
+.ticket small{display:block;margin-top:14px;color:#5A6580;font-size:.78rem;line-height:1.4}
+
+.facts{background:var(--surface);border-bottom:1px solid var(--line)}
+.facts ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr))}
+.facts li{padding:20px 18px;border-left:1px solid var(--line)}
+.facts li:first-child{border-left:0}
+.facts b{display:block;font-family:var(--head);font-size:1.02rem;color:var(--ink)}
+.facts span{font-size:.88rem;color:var(--muted)}
+
+/* products */
+.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;margin-top:28px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:24px;min-width:0}
+.card h3{font-size:1.15rem;font-weight:700;margin-bottom:.6rem}
+.card p{color:var(--muted);font-size:.97rem}
+.card ul{margin:0;padding-left:1.1rem;color:var(--muted);font-size:.93rem}
+.tag{display:inline-block;font-family:var(--head);font-size:.7rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;background:var(--tint);color:var(--ink);padding:3px 9px;border-radius:4px;margin-bottom:12px}
+
+/* spec table */
+.tablewrap{overflow-x:auto;margin-top:24px;border:1px solid var(--line);border-radius:8px;background:var(--surface)}
+table{border-collapse:collapse;width:100%;font-variant-numeric:tabular-nums}
+th,td{text-align:left;padding:13px 18px;border-bottom:1px solid var(--line);font-size:.97rem;vertical-align:top}
+th{width:40%;font-weight:600;color:var(--muted)}
+tr:last-child th,tr:last-child td{border-bottom:0}
+.note{margin-top:16px;padding:14px 18px;background:var(--warn);border-left:5px solid var(--warn-line);border-radius:4px;font-size:.93rem;color:var(--ink)}
+
+/* industries */
+.ind{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:18px;margin-top:28px}
+.ind .card{grid-column:span 2}
+.ind .card.big{grid-column:span 3}
+.ind .big h3{font-size:1.3rem}
+.use{margin-top:12px;font-size:.85rem;color:var(--ink);font-weight:600}
+.use em{font-style:normal;color:var(--muted);font-weight:400}
+
+/* chain */
+.chain-band{background:var(--tint)}
+.chain{display:flex;align-items:stretch;gap:0;margin-top:26px;flex-wrap:wrap}
+.node{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:14px 18px;min-width:150px}
+.node b{font-family:var(--head);display:block}
+.node small{color:var(--muted)}
+.node.hot{background:var(--navy);border-color:var(--navy);color:#fff}
+.node.hot small{color:#CBD6EE}
+.arrow{align-self:center;padding:0 10px;color:var(--muted);font-size:1.4rem}
+.fan{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px;margin-top:14px}
+.fan div{background:var(--surface);border:1px solid var(--line);border-top:4px solid var(--gold);border-radius:6px;padding:12px 14px;font-weight:600;font-size:.92rem;text-align:center}
+.fanlabel{margin-top:22px;font-size:.85rem;color:var(--muted)}
+.stat{display:grid;grid-template-columns:auto 1fr;gap:20px;align-items:center;margin-top:30px;padding:20px 24px;background:var(--surface);border:1px solid var(--line);border-radius:8px}
+.stat b{font-family:var(--head);font-size:2.4rem;color:var(--link);font-variant-numeric:tabular-nums}
+.stat p{margin:0;color:var(--muted)}
+.src{font-size:.8rem;color:var(--muted);margin-top:14px}
+
+/* steps */
+.steps{list-style:none;counter-reset:s;margin:26px 0 0;padding:0;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:16px}
+.steps li{counter-increment:s;background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:18px;min-width:0}
+.steps li::before{content:counter(s);display:grid;place-items:center;width:30px;height:30px;border-radius:50%;background:var(--navy);color:#fff;font-family:var(--head);font-weight:700;margin-bottom:10px}
+.steps b{display:block;font-family:var(--head);margin-bottom:4px}
+.steps span{font-size:.9rem;color:var(--muted)}
+.docs{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
+.docs span{background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:6px 14px;font-size:.88rem;font-weight:500}
+
+/* contact */
+.contact-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:32px;margin-top:26px}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:24px;min-width:0}
+.panel h3{font-size:1.1rem;margin-bottom:12px}
+.kv{display:grid;grid-template-columns:auto 1fr;gap:8px 16px;margin:0}
+.kv dt{color:var(--muted);font-size:.9rem}
+.kv dd{margin:0;font-weight:500;overflow-wrap:anywhere}
+label{display:block;font-size:.85rem;font-weight:600;margin:12px 0 4px}
+input,select,textarea{width:100%;font:inherit;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:6px;padding:10px 12px;min-height:44px}
+textarea{min-height:130px;resize:vertical}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.out{margin-top:16px;display:none}
+.out.show{display:block}
+.btns{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
+.flash{font-size:.85rem;color:var(--muted);margin-top:8px;min-height:1.2em}
+
+footer{background:var(--deep);color:#C5D0E8;padding-block:34px;font-size:.88rem;border-top:2px solid var(--gold)}
+footer .wrap{display:flex;gap:18px 40px;flex-wrap:wrap;justify-content:space-between}
+footer b{color:#fff;font-family:var(--head)}
+
+@media (max-width:900px){
+  .hero-grid,.contact-grid{grid-template-columns:minmax(0,1fr)}
+  .cards{grid-template-columns:minmax(0,1fr)}
+  .facts ul{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .facts li:nth-child(3){border-left:0}
+  .facts li:nth-child(n+3){border-top:1px solid var(--line)}
+  .ind{grid-template-columns:minmax(0,1fr)}
+  .ind .card,.ind .card.big{grid-column:auto}
+  .steps{grid-template-columns:minmax(0,1fr)}
+  .fan{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .stat{grid-template-columns:minmax(0,1fr)}
+  nav{margin-left:0;width:100%}
+  section{padding-block:48px}
+}
+@media (max-width:480px){.row2{grid-template-columns:minmax(0,1fr)}.bar img{height:38px}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* ===== restrained motion + photo slots ===== */
+:root{--shadow:rgba(15,37,87,.14)}
+
+
+.card{transition:transform .2s ease,box-shadow .2s ease}
+.card:hover{transform:translateY(-2px);box-shadow:0 10px 22px var(--shadow)}
+.photo{display:block;width:100%;height:auto;aspect-ratio:16/10;object-fit:cover;border-radius:6px;margin-bottom:18px;background:var(--tint)}
+.ico{width:48px;height:48px;display:grid;place-items:center;border-radius:10px;background:var(--tint);color:var(--link);margin-bottom:14px}
+.ico svg{width:32px;height:32px}
+.wa-float{position:fixed;right:max(16px,env(safe-area-inset-right,0px));bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:25;display:flex;align-items:center;gap:8px;min-height:48px;padding:0 18px 0 14px;border-radius:999px;background:#128C4A;color:#fff;text-decoration:none;font-family:var(--head);font-weight:700;font-size:.88rem;box-shadow:0 6px 18px rgba(0,0,0,.3)}
+.wa-float:hover{filter:brightness(1.1)}
+.wa-float svg{width:22px;height:22px}
+@media (max-width:480px){.wa-float span{display:none}.wa-float{padding:0 14px}}
+html.js .rv{opacity:0;transform:translateY(14px);transition:opacity .45s ease,transform .45s ease}
+html.js .rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important}html.js .rv{opacity:1;transform:none}}
+
+.t3 th{width:30%}
+.t3 td:nth-child(2){width:28%;font-weight:600}
+.checks{margin:0;padding-left:1.1rem;color:var(--muted);font-size:.97rem;display:grid;gap:8px}
+.two{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:20px;margin-top:26px}
+.two .card{min-width:0}
+@media (max-width:900px){.two{grid-template-columns:minmax(0,1fr)}}
+.photo.wide{aspect-ratio:16/7;object-position:60% 50%;margin:26px 0 8px}
+:root{--top-bg:#FFFFFF;--top-fg:#13306F;--hero-from:#FFFFFF;--hero-to:#F4F7FB;--hero-h:#0F2557;--hero-sub:#4C5871;--hero-accent:#8A6D1C;--ghost:#13306F}
+
+
+
+.logo-dk{display:none}
+header.top{background:var(--top-bg)}
+body::before{background:var(--top-bg)}
+nav a{color:var(--top-fg)}
+nav a:hover{color:var(--top-fg)}
+.hero{background:linear-gradient(180deg,var(--hero-from),var(--hero-to));border-bottom:1px solid var(--line)}
+.hero h1{color:var(--hero-h)}
+.hero h1 span{color:var(--hero-accent)}
+.hero p.sub{color:var(--hero-sub)}
+.hero .eyebrow{color:var(--hero-accent)!important}
+.btn.ghost{color:var(--ghost);border-color:var(--ghost)}
+.ticket{border:1px solid #D9E0EC;border-top:6px solid var(--gold)}
+
+:root{--bg:#FFFFFF;--tint:#F6F7F9;--surface:#FFFFFF;--line:#E2E6EC;--green:#086938;--green-tint:#E6F2EB;color-scheme:light}
+h2,h3{color:var(--deep)}
+.tag{background:var(--green-tint);color:var(--green)}
+.ico{background:var(--green-tint);color:var(--green)}
+.eyebrow{color:var(--green)}
+.steps li::before{background:var(--green)}
+.tablewrap{border-top:4px solid var(--green)}
+.cards .card{border-top:4px solid var(--gold)}
+h2::after{content:"";display:block;width:56px;height:4px;background:var(--gold);margin-top:12px}
+.chain-band{background:var(--deep)}
+.chain-band h2{color:#fff}
+.chain-band .eyebrow{color:var(--gold)}
+.chain-band .lede,.chain-band .fanlabel{color:#D3DCEE}
+.chain-band .src{color:#B9C5DE}
+.chain-band .node.hot{background:var(--green);border-color:var(--green);color:#fff}
+.chain-band .node.hot small{color:#DDEFE5}
+.chain-band .arrow{color:var(--gold)}
+.chain-band .stat{border-color:transparent}
+.cta-band{background:var(--deep);color:#fff;padding-block:44px}
+.cta-band .wrap{display:flex;gap:20px 40px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.cta-band h2{color:#fff;margin:0}
+.cta-band h2::after{display:none}
+.cta-band p{margin:6px 0 0;color:#D3DCEE}
+#specification{background:var(--gold)!important}
+#specification .eyebrow,#specification .lede{color:var(--deep)}
+#specification h2::after{background:var(--deep)}
+#specification .tablewrap{border-top-color:var(--deep);border-color:var(--deep)}
+#supply{background:var(--green)}
+#supply h2{color:#fff}
+#supply .eyebrow{color:var(--gold)}
+#supply .rail{background:rgba(255,255,255,.35)}
+#supply .src{color:#E6F2EB}
+.facts{background:var(--green);border-bottom:0}
+.facts li{border-color:rgba(255,255,255,.28)}
+.facts b{color:#fff}
+.facts span{color:#E6F2EB}
+#about{background:var(--gold)!important}
+#about .eyebrow,#about .lede{color:var(--deep)}
+#about h2::after{background:var(--deep)}
+#about .card{border-top-color:var(--green)}
+
+/* ===== product range: urea, CO2 / dry ice, denatured and crude ethanol ===== */
+.fan{grid-template-columns:repeat(6,minmax(0,1fr))}@media (max-width:900px){.fan{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.range{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin-top:26px}
+.range a{display:block;text-decoration:none;color:inherit;background:var(--surface);border:1px solid var(--line);border-top:4px solid var(--gold);border-radius:8px;padding:20px;min-width:0;transition:transform .2s ease,box-shadow .2s ease}
+.range a:hover{transform:translateY(-2px);box-shadow:0 10px 22px var(--shadow)}
+.range h3{font-size:1.05rem;margin-bottom:.35rem}
+.range p{font-size:.9rem;color:var(--muted);margin:0 0 .8rem}
+.range .go{font-family:var(--head);font-weight:700;font-size:.85rem;color:var(--green)}
+@media (max-width:900px){.range{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:560px){.range{grid-template-columns:minmax(0,1fr)}}
+@media (min-width:901px){.cards.c2{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.sub3{font-family:var(--head);font-size:1.1rem;color:var(--deep);margin:34px 0 0}
+.only{display:flex;gap:12px;align-items:flex-start;margin-top:22px;padding:16px 20px;background:var(--green-tint);border:1px solid var(--green);border-left-width:6px;border-radius:6px;color:var(--ink);font-size:.97rem}
+.only b{font-family:var(--head);color:var(--green)}
+#co2 .steps li,#ethanol .card,#urea .card{min-width:0}
+#ethanol{background:var(--tint)}
+#co2{background:var(--deep)}
+#co2 h2{color:#fff}
+#co2 .eyebrow{color:var(--gold)}
+#co2 .lede{color:#D3DCEE}
+#co2 .sub3{color:#fff}
+#co2 .src{color:#B9C5DE}
+#co2 .steps li::before{background:var(--green)}
+
+/* ===== agro commodities, palm oil, biochar ===== */
+.grp th{background:var(--green-tint);color:var(--green);font-family:var(--head);font-size:.74rem;letter-spacing:.12em;text-transform:uppercase;width:auto;padding:9px 18px}
+table.t3 th[scope=row]{width:26%}
+#agro .tablewrap{border-top-color:var(--green)}
+.rules{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:20px}
+.rules div{background:var(--surface);border:1px solid var(--line);border-left:5px solid var(--green);border-radius:6px;padding:14px 16px;font-size:.93rem;color:var(--muted);min-width:0}
+.rules b{display:block;font-family:var(--head);color:var(--deep);margin-bottom:2px}
+@media (max-width:900px){.rules{grid-template-columns:minmax(0,1fr)}}
+@media (max-width:560px){
+#agro table.t3 thead{display:none}
+#agro table.t3,#agro table.t3 tbody{display:block}
+#agro table.t3 tr{display:block;padding:12px 16px;border-bottom:1px solid var(--line)}
+#agro table.t3 tr.grp{padding:0}
+#agro table.t3 th,#agro table.t3 td{display:block;width:auto;padding:0;border:0}
+#agro table.t3 th[scope=row]{width:auto;color:var(--deep);font-family:var(--head);font-size:1rem}
+#agro table.t3 td:nth-of-type(1){font-weight:600}
+#agro table.t3 td:nth-of-type(2){color:var(--muted);font-size:.9rem}
+#agro table.t3 tr.grp th{padding:9px 16px}
+}
+#palm{background:var(--bg)}
+#biochar{background:var(--deep)}
+#biochar h2{color:#fff}
+#biochar .eyebrow{color:var(--gold)}
+#biochar .lede{color:#D3DCEE}
+#biochar .src{color:#B9C5DE}
+#biochar .tag{background:var(--gold);color:var(--deep)}
+#biochar .cards .card{border-top-color:var(--gold)}
+#biochar .cta{margin-top:24px}
+</style>
+
+</head>
+<body>
+<header class="top">
+  <div class="wrap bar">
+    <a href="#top" aria-label="Sammas Multiconcept Global Industries Ltd, home"><img class="logo-lt" src="assets/img-01.png" alt="Sammas Multiconcept Global Industries Ltd" width="156" height="44"><img class="logo-dk" src="assets/img-02.png" alt="" width="156" height="44" aria-hidden="true"></a>
+    <nav aria-label="Main">
+      <a href="#products">Molasses</a>
+      <a href="#urea">Urea</a>
+      <a href="#co2">CO₂</a>
+      <a href="#ethanol">Ethanol</a>
+      <a href="#agro">Agro</a>
+      <a href="#palm">Palm &amp; biochar</a>
+      <a href="#supply">Supply</a>
+      <a href="#contact" class="btn gold" style="min-height:38px;padding:6px 16px">Request a quote</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+<div class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow" style="color:#CAAA55">Cane molasses · Lagos, Nigeria</div>
+      <h1>Bulk cane molasses, <span>delivered to your tank.</span></h1>
+      <p class="sub">Sammas Multiconcept Global Industries Ltd supplies refinery-sourced cane molasses for ethanol plants, feed mills and food manufacturers. We load by road tanker, in 1,000-litre IBCs and for export. We also supply urea, CO₂ and dry ice, denatured ethanol for agriculture and industry, agro commodities and palm oil.</p>
+      <div class="cta">
+        <a class="btn gold" href="#contact">Request a quote</a>
+        <a class="btn ghost" href="https://wa.me/2347051863925" target="_blank" rel="noopener">Chat on WhatsApp</a>
+      </div>
+    </div>
+    <aside class="ticket" aria-label="Typical specification">
+      <h3>Typical specification</h3>
+      <dl>
+        <dt>Brix</dt><dd>≥ 79°</dd>
+        <dt>pH</dt><dd>5.5 – 6.5</dd>
+        <dt>Total reducing sugars</dt><dd>≥ 45%</dd>
+        <dt>Density</dt><dd>≈ 1.4 kg/L</dd>
+        <dt>Tanker load</dt><dd>≈ 30 t</dd>
+      </dl>
+      <small>Batch values are shown on the certificate of analysis. Full table below.</small>
+    </aside>
+  </div>
+</div>
+
+<div class="facts">
+  <div class="wrap">
+    <ul>
+      <li><b>Bulk tanker loads</b><span>About 30 tonnes, roughly 21,000 litres</span></li>
+      <li><b>1,000-litre IBCs</b><span>Smaller volumes, special orders</span></li>
+      <li><b>Export enquiries</b><span>West Africa and other markets</span></li>
+      <li><b>Paperwork per load</b><span>Delivery note, waybill, invoice</span></li>
+    </ul>
+  </div>
+</div>
+
+
+<section id="range">
+  <div class="wrap">
+    <div class="eyebrow">Our range</div>
+    <h2>What we supply</h2>
+    <p class="lede">Our core business is industrial inputs: molasses, urea, CO₂ and ethanol. We also trade agro commodities and palm oil, and we are setting up biochar supply. We source from farms, mills and producers and sell to businesses only (B2B). Every order is quoted in writing and supplied against a confirmed order.</p>
+    <div class="range">
+      <a href="#products"><div class="ico"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="24" cy="12" rx="13" ry="5"/><path d="M11 12v24c0 2.8 5.8 5 13 5s13-2.2 13-5V12"/><path d="M11 20c0 2.8 5.8 5 13 5s13-2.2 13-5M11 28c0 2.8 5.8 5 13 5s13-2.2 13-5"/></svg></div><h3>Cane molasses</h3><p>Bulk tanker, IBC and export.</p><span class="go">See molasses →</span></a>
+      <a href="#urea"><div class="ico"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 10h20l4 8v22a3 3 0 0 1-3 3H13a3 3 0 0 1-3-3V18z"/><path d="M10 18h28M18 10l2 8M30 10l-2 8"/><circle cx="19" cy="30" r="1.6"/><circle cx="27" cy="27" r="1.6"/><circle cx="26" cy="35" r="1.6"/></svg></div><h3>Urea, 46% N</h3><p>Granular, in 50 kg bags.</p><span class="go">See urea →</span></a>
+      <a href="#co2"><div class="ico"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="15" y="14" width="18" height="30" rx="8"/><path d="M21 14V9h6v5M18 9h12M15 26h18"/></svg></div><h3>CO₂ and dry ice</h3><p>Bulk liquid, cylinders, pellets and blocks.</p><span class="go">See CO₂ →</span></a>
+      <a href="#ethanol"><div class="ico"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 6h10M21 6v13L10 38a4 4 0 0 0 3.5 6h21A4 4 0 0 0 38 38L27 19V6"/><path d="M15 32h18"/></svg></div><h3>Denatured and crude ethanol</h3><p>For agriculture and industry only.</p><span class="go">See ethanol →</span></a>
+      <a href="#agro"><div class="ico"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M24 43V22"/><path d="M24 27c-9 0-14-5-14-14 9 0 14 5 14 14z"/><path d="M24 22c0-8 5-12 14-12 0 8-5 12-14 12z"/></svg></div><h3>Agro commodities</h3><p>Sesame, groundnut, cashew, soybean, ginger, hibiscus, gum arabic.</p><span class="go">See commodities →</span></a>
+      <a href="#spices"><div class="ico"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M24 5l4.5 12.5L41 14l-8.5 10 8.5 10-12.5-3.5L24 43l-4.5-12.5L7 34l8.5-10L7 14l12.5 3.5z"/></svg></div><h3>Food spices</h3><p>Cardamom, black peppercorn, star anise.</p><span class="go">See spices →</span></a>
+      <a href="#palm"><div class="ico"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M24 5c7 9 12 15 12 22a12 12 0 0 1-24 0c0-7 5-13 12-22z"/><path d="M18 28a6 6 0 0 0 6 6"/></svg></div><h3>Palm oil</h3><p>Crude and refined, for supply and export.</p><span class="go">See palm oil →</span></a>
+      <a href="#biochar"><div class="ico"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 41h32"/><path d="M13 41c0-6 4-10 11-10s11 4 11 10"/><path d="M24 31V15"/><path d="M24 21c-6 0-9-3-9-8 6 0 9 3 9 8z"/><path d="M24 25c0-5 3-8 9-8 0 5-3 8-9 8z"/></svg></div><h3>Biochar</h3><p>From palm kernel shell. In development.</p><span class="go">See biochar →</span></a>
+    </div>
+  </div>
+</section>
+
+<section id="products">
+  <div class="wrap">
+    <div class="eyebrow">Molasses</div>
+    <h2>One product, three ways to buy it</h2>
+    <p class="lede">Molasses is the by-product left after sugar is crystallised from cane. It is rich in fermentable sugar, which is why so many industries buy it. We supply it in the format your plant can receive.</p>
+    <div class="cards">
+      <article class="card">
+        <img class="photo" src="assets/img-03.jpg" alt="Road tanker loaded with molasses" loading="lazy">
+        <span class="tag">Bulk</span>
+        <h3>Road tanker supply</h3>
+        <p>Full tanker loads of about 30 tonnes, delivered to your storage tank. Single loads or a monthly call-off, agreed in writing before the first delivery.</p>
+        <ul><li>Suits ethanol plants, large feed mills and food factories</li><li>Quantity, delivery window and tank access confirmed before loading</li></ul>
+      </article>
+      <article class="card">
+        <img class="photo" src="assets/img-04.jpg" alt="1,000-litre IBC tote of molasses" loading="lazy">
+        <span class="tag">Special order</span>
+        <h3>1,000-litre IBC totes</h3>
+        <p>For plants without bulk tanks and for smaller monthly volumes. One IBC holds about 1.4 tonnes of molasses.</p>
+        <ul><li>Ordered in advance as a special order</li><li>Container return and deposit terms agreed at order</li></ul>
+      </article>
+      <article class="card">
+        <img class="photo" src="assets/img-05.jpg" alt="Container vessel at sea" loading="lazy">
+        <span class="tag">Export</span>
+        <h3>Export supply</h3>
+        <p>We take export enquiries from traders and processors. Tell us the destination, monthly volume and shipping terms, and we will confirm what we can supply.</p>
+        <ul><li>Volume, packaging and documents confirmed per shipment</li></ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="specification" style="background:var(--tint)">
+  <div class="wrap">
+    <div class="eyebrow">Specification</div>
+    <h2>Typical product specification</h2>
+    <p class="lede">Cane molasses, the final by-product of sugar refining. Values below are our typical specification. The certificate of analysis for each batch states the actual figures.</p>
+    <div class="tablewrap">
+      <table>
+        <tbody>
+          <tr><th scope="row">Product</th><td>Cane molasses, refinery by-product</td></tr>
+          <tr><th scope="row">Brix (at 20 °C)</th><td>79° minimum</td></tr>
+          <tr><th scope="row">pH (at 25 °C)</th><td>5.5 to 6.5</td></tr>
+          <tr><th scope="row">Total reducing sugars</th><td>45% minimum</td></tr>
+          <tr><th scope="row">Total solids</th><td>78% minimum</td></tr>
+          <tr><th scope="row">Moisture</th><td>22% maximum</td></tr>
+          <tr><th scope="row">Sulphur dioxide</th><td>70 ppm maximum</td></tr>
+          <tr><th scope="row">Colour and form</th><td>Dark brown to black, viscous liquid</td></tr>
+          <tr><th scope="row">Density</th><td>About 1.4 kg per litre</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="note">Ethanol plants, feed mills and food manufacturers often need different limits. Send us your specification and we will tell you whether we can meet it before you commit to a load.</div>
+  </div>
+</section>
+
+<section id="industries">
+  <div class="wrap">
+    <div class="eyebrow">Where molasses is used</div>
+    <h2>A sugar by-product with many industrial buyers</h2>
+    <p class="lede">Demand for molasses comes from far outside the sugar industry. These are the main uses we supply.</p>
+    <div class="ind">
+      <article class="card big">
+        <video class="photo" autoplay muted loop playsinline preload="metadata" poster="assets/img-06.jpg" src="assets/hero.mp4" aria-label="Fermentation vessel in a laboratory"></video>
+        <div class="ico"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 6h10M21 6v13L10 38a4 4 0 0 0 3.5 6h21a4 4 0 0 0 3.5-6L27 19V6"/><path d="M14 34h20" opacity=".6"/></svg></div><h3>Ethanol and distilleries</h3>
+        <p>Molasses ferments directly to ethanol with no starch conversion step. Many cassava-based ethanol plants add molasses as a second sugar source when dry cassava is scarce. Distilleries use it as a fermentation base.</p>
+        <div class="use">Typical buyers <em>· ethanol plants, distilleries, industrial alcohol producers</em></div>
+      </article>
+      <article class="card big">
+        <img class="photo" src="assets/img-07.jpg" alt="Compound feed pellets" loading="lazy">
+        <div class="ico"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 31h34c0 8-7 13-17 13S7 39 7 31z"/><ellipse cx="17" cy="22" rx="3.2" ry="2.2" fill="currentColor" stroke="none"/><ellipse cx="24" cy="19" rx="3.2" ry="2.2" fill="currentColor" stroke="none"/><ellipse cx="31" cy="22" rx="3.2" ry="2.2" fill="currentColor" stroke="none"/></svg></div><h3>Animal feed</h3>
+        <p>Pellet mills use about 2 to 5% molasses as a binder, which also cuts dust and improves taste. Ruminant diets can use about 10 to 20% of the dry matter as an energy feed. It also carries urea in liquid supplements and lick blocks.</p>
+        <div class="use">Typical buyers <em>· feed mills, cattle and dairy farms, block makers</em></div>
+      </article>
+      <article class="card">
+        <img class="photo" src="assets/img-08.jpg" alt="Food production line" loading="lazy">
+        <div class="ico"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="13" y="8" width="22" height="7" rx="2"/><rect x="10" y="15" width="28" height="29" rx="5"/><rect x="12" y="28" width="24" height="14" rx="3" fill="currentColor" stroke="none" opacity=".35"/></svg></div><h3>Food manufacturing</h3>
+        <p>Colour, body and moisture retention in sauces, pastes, baked goods and confectionery. Food use needs the right grade and documents, so tell us what your quality team requires.</p>
+      </article>
+      <article class="card">
+        <img class="photo" src="assets/img-09.jpg" alt="Fermentation vessel" loading="lazy">
+        <div class="ico"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="20" cy="28" r="11"/><circle cx="35" cy="14" r="5.5"/><circle cx="37" cy="36" r="3.5"/><circle cx="17" cy="25" r="2" fill="currentColor" stroke="none"/></svg></div><h3>Yeast and fermentation</h3>
+        <p>Baker's yeast, vinegar and organic acids use molasses as a main sugar source.</p>
+      </article>
+      <article class="card">
+        <img class="photo" src="assets/img-10.jpg" alt="Biogas digester" loading="lazy">
+        <div class="ico"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M24 4c3 9 14 13 14 26a14 14 0 0 1-28 0c0-7 5-10 6-16 4 2 6 5 6 9 4-5 4-12 2-19z"/></svg></div><h3>Biogas and soil products</h3>
+        <p>A high-sugar feedstock for biogas digesters and an ingredient in some soil-conditioning products.</p>
+      </article>
+    </div>
+    <p class="src">Feed inclusion levels are typical figures from published feed references (Feedipedia). Your nutritionist sets the rate for your formulation.</p>
+  </div>
+</section>
+
+<section id="feed" style="background:var(--tint)">
+  <div class="wrap">
+    <div class="eyebrow">For feed mills</div>
+    <h2>How feed mills use molasses</h2>
+    <p class="lede">Molasses does three jobs in feed: it binds pellets, it makes feed taste better, and it supplies energy. These are the typical levels published in feed references.</p>
+    <div class="tablewrap">
+      <table class="t3">
+        <thead><tr><th scope="col">Use</th><th scope="col">Typical level</th><th scope="col">What it does</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Pellet binder</th><td>About 2 to 5%</td><td>Binds the pellet, cuts dust and improves taste. Keep below about 15%.</td></tr>
+          <tr><th scope="row">Cattle, sheep and goats</th><td>About 10 to 20% of diet dry matter</td><td>Energy feed and palatability for ruminants.</td></tr>
+          <tr><th scope="row">Liquid supplements with urea</th><td>Urea at about 2.5% of the molasses weight</td><td>Carries non-protein nitrogen for ruminants.</td></tr>
+          <tr><th scope="row">Pigs</th><td>Below about 10% for weaners, 20% for growers</td><td>Higher levels can cause loose droppings.</td></tr>
+          <tr><th scope="row">Lick blocks and rabbit blocks</th><td>About 25 to 50%</td><td>Forms the block and drives intake.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="note">Figures are typical values from published feed references (Feedipedia). Your nutritionist sets the rate for your formulation. Tell us your monthly tonnage and whether you take bulk or IBC, and we will send a quotation.</div>
+    <div class="two">
+      <div class="card">
+        <h3>What a feed-mill buyer usually asks for</h3>
+        <ul class="checks">
+          <li>The specification and a certificate of analysis for each batch</li>
+          <li>A delivery schedule that matches the production plan</li>
+          <li>Confirmation the product suits the mill's tank and pump</li>
+          <li>Payment terms agreed in writing before loading</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Send us your requirement</h3>
+        <p style="margin-bottom:1rem">Monthly tonnage, delivery location and the form you can receive. We reply with a written quotation.</p>
+        <a class="btn" href="#contact">Request a quote</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="chain-band" id="value-chain">
+  <div class="wrap">
+    <div class="eyebrow">The value chain</div>
+    <h2>From sugarcane to your production line</h2>
+    <p class="lede">Every tonne of sugar refined leaves molasses behind. That by-product feeds several parts of the Nigerian economy.</p>
+    <img class="photo wide" src="assets/img-11.jpg" alt="Sugarcane harvest in the field" loading="lazy">
+        <div class="chain" role="img" aria-label="Sugarcane to sugar refinery to molasses, then to ethanol, feed, food, yeast and biogas">
+      <div class="node"><b>Sugarcane</b><small>Grown and milled</small></div><div class="arrow" aria-hidden="true">→</div>
+      <div class="node"><b>Sugar refining</b><small>Sugar is crystallised out</small></div><div class="arrow" aria-hidden="true">→</div>
+      <div class="node hot"><b>Molasses</b><small>The sugar-rich residue</small></div>
+    </div>
+    <div class="fanlabel">Then it goes to</div>
+    <div class="fan">
+      <div>Ethanol and distilling</div><div>Animal feed</div><div>Food products</div><div>Yeast and fermentation</div><div>Biogas and soil products</div><div>CO₂ and dry ice</div>
+    </div>
+    <div class="stat">
+      <b>≈ 75%</b>
+      <p>of the ethanol Nigeria uses is imported, roughly 300 to 350 million litres a year against about 400 million litres of demand in 2024. Local sugar-based and cassava-based plants that secure steady feedstock can serve part of that gap.</p>
+    </div>
+    <p class="src">Sources: National Council for Ethanol / Clean Technology Hub figures as reported by BusinessDay and AllAfrica.</p>
+  </div>
+</section>
+
+
+<section id="urea">
+  <div class="wrap">
+    <div class="eyebrow">Urea</div>
+    <h2>Urea, 46% nitrogen</h2>
+    <p class="lede">Granular urea in 50 kg bags for farms, fertiliser blenders and fermentation plants. Supplied against confirmed orders: tell us the tonnage and delivery point and we confirm availability and price in writing.</p>
+    <div class="cards">
+      <article class="card">
+        <div class="ico"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 38C8 20 20 8 40 8c0 20-10 32-26 30z"/><path d="M10 38C16 28 24 20 32 16"/></svg></div>
+        <h3>Agriculture</h3>
+        <p>A high-nitrogen fertiliser for cereals, vegetables and plantation crops, and a base for fertiliser blenders.</p>
+        <ul><li>Bagged in 50 kg for farm and depot delivery</li><li>Application rates are set by your agronomist</li></ul>
+      </article>
+      <article class="card">
+        <div class="ico"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 6h10M21 6v13L10 38a4 4 0 0 0 3.5 6h21A4 4 0 0 0 38 38L27 19V6"/><path d="M15 32h18"/></svg></div>
+        <h3>Ethanol and fermentation plants</h3>
+        <p>A nitrogen source for yeast in fermentation. Many plants buy molasses and urea from one supplier, so you can ask for both on a single quotation.</p>
+        <ul><li>Delivered with your molasses where routes allow</li></ul>
+      </article>
+      <article class="card">
+        <div class="ico"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 42V22l12 7V22l12 7V12h12v30z"/><path d="M12 42v-6M24 42v-6M36 42v-6"/></svg></div>
+        <h3>Industrial buyers</h3>
+        <p>For technical uses where a 46% nitrogen granule is specified. Send us your specification and we tell you whether we can meet it.</p>
+        <ul><li>Specification confirmed before you commit</li></ul>
+      </article>
+    </div>
+    <div class="docs" aria-label="Urea at a glance"><span>46% nitrogen</span><span>Granular</span><span>50 kg bags</span><span>Supplied against confirmed orders</span></div>
+  </div>
+</section>
+
+<section id="co2">
+  <div class="wrap">
+    <div class="eyebrow">Carbon dioxide</div>
+    <h2>CO₂ and dry ice</h2>
+    <p class="lede">Fermentation gives off carbon dioxide alongside ethanol. Captured, cleaned and liquefied, it is sold as beverage and industrial CO₂, and pressed into dry ice for the cold chain and for cleaning. We supply the finished product against confirmed orders.</p>
+    <h3 class="sub3">How fermentation CO₂ becomes a product</h3>
+    <ol class="steps">
+      <li><b>Fermentation</b><span>Yeast turns sugar into ethanol and CO₂. In theory each tonne of ethanol comes with close to a tonne of CO₂.</span></li>
+      <li><b>Capture</b><span>The CO₂-rich gas leaving the fermenter is collected instead of vented.</span></li>
+      <li><b>Clean and compress</b><span>Moisture and other gases are removed and the CO₂ is compressed.</span></li>
+      <li><b>Liquefy and store</b><span>The gas is cooled into liquid CO₂ and held in an insulated cryogenic tank.</span></li>
+      <li><b>Fill or press</b><span>Filled into cylinders, loaded into bulk tankers, or expanded and pressed into dry ice.</span></li>
+    </ol>
+    <div class="cards">
+      <article class="card">
+        <div class="ico"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="15" y="14" width="18" height="30" rx="8"/><path d="M21 14V9h6v5M18 9h12M15 26h18"/></svg></div>
+        <span class="tag">Bulk</span>
+        <h3>Liquid CO₂ by tanker</h3>
+        <p>Delivered by insulated tanker to your own cryogenic storage tank.</p>
+        <ul><li>Suits beverage plants, breweries, water treatment and large industrial users</li><li>Tank connection and delivery window confirmed before loading</li></ul>
+      </article>
+      <article class="card">
+        <div class="ico"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="15" y="14" width="18" height="30" rx="8"/><path d="M21 14V9h6v5M18 9h12M15 26h18"/></svg></div>
+        <span class="tag">Cylinders</span>
+        <h3>CO₂ in cylinders</h3>
+        <p>For smaller users such as bars, welding shops, greenhouses and laboratories. Empty cylinders are exchanged on delivery.</p>
+        <ul><li>Food and beverage grade or industrial grade</li><li>Cylinder deposit and exchange terms agreed at order</li></ul>
+      </article>
+      <article class="card">
+        <div class="ico"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M24 5v38M7.5 14.5l33 19M7.5 33.5l33-19"/><path d="M20 7l4 4 4-4M20 41l4-4 4 4M5 18l5.5 1.5L9 14M43 30l-5.5-1.5L39 34M5 30l5.5-1.5L9 34M43 18l-5.5 1.5L39 14"/></svg></div>
+        <span class="tag">Dry ice</span>
+        <h3>Dry ice pellets and blocks</h3>
+        <p>Solid CO₂ at −78.5 °C for cold-chain shipping, food freezing, event effects and dry-ice cleaning.</p>
+        <ul><li>Dry ice sublimates, so we schedule delivery close to use</li><li>Insulated packing; handle with insulated gloves in a ventilated space</li></ul>
+      </article>
+    </div>
+    <div class="docs" aria-label="Where CO2 is used"><span>Carbonated drinks and beer</span><span>Cold chain and food freezing</span><span>Welding</span><span>Dry-ice cleaning</span><span>Water treatment</span><span>Fire safety systems</span><span>Greenhouse enrichment</span></div>
+    <div class="note">Beverage grade is specified against the ISBT purity benchmark of 99.9% minimum. Industrial grade is also available. A certificate of analysis and a safety data sheet accompany each lot, and source and grade are confirmed on your quotation.</div>
+    <p class="src">Process steps and purity benchmark follow published descriptions of fermentation CO₂ recovery plants (Praj Industries; Punjab Carbonic).</p>
+  </div>
+</section>
+
+<section id="ethanol">
+  <div class="wrap">
+    <div class="eyebrow">Ethanol</div>
+    <h2>Denatured and crude ethanol</h2>
+    <p class="lede">Technical ethanol for makers of agrochemicals, farm sanitisers, solvents and fuels. Supplied in bulk against confirmed orders.</p>
+    <div class="only"><div><b>For agriculture and industry only.</b> Not supplied for beverages, food, cosmetics or personal care. We confirm your end use before supply.</div></div>
+    <div class="cards c2">
+      <article class="card">
+        <div class="ico"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="24" cy="12" rx="13" ry="5"/><path d="M11 12v24c0 2.8 5.8 5 13 5s13-2.2 13-5V12"/><path d="M11 20c0 2.8 5.8 5 13 5s13-2.2 13-5M11 28c0 2.8 5.8 5 13 5s13-2.2 13-5"/></svg></div>
+        <span class="tag">Crude</span>
+        <h3>Crude ethanol</h3>
+        <p>Unrectified ethanol from fermentation, for buyers who rectify, blend or process it further.</p>
+        <ul><li>Bulk tanker, IBC or drum</li><li>Strength and impurity limits agreed per order</li></ul>
+      </article>
+      <article class="card">
+        <div class="ico"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 6h10M21 6v13L10 38a4 4 0 0 0 3.5 6h21A4 4 0 0 0 38 38L27 19V6"/><path d="M15 32h18"/></svg></div>
+        <span class="tag">Denatured</span>
+        <h3>Denatured ethanol</h3>
+        <p>Technical ethanol made unfit to drink by an added denaturant, for solvent, formulation and sanitising uses.</p>
+        <ul><li>Denaturant and strength agreed with you at order</li><li>Flammable: handled and stored to ethanol safety rules</li></ul>
+      </article>
+    </div>
+    <h3 class="sub3">Where agricultural and industrial buyers use it</h3>
+    <div class="cards">
+      <article class="card">
+        <div class="ico"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 38C8 20 20 8 40 8c0 20-10 32-26 30z"/><path d="M10 38C16 28 24 20 32 16"/></svg></div>
+        <h3>Pesticide and herbicide makers</h3>
+        <p>Ethanol is used as a solvent and as an inert ingredient in some crop-protection products. Your formulator confirms suitability for each product.</p>
+      </article>
+      <article class="card">
+        <div class="ico"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="14" cy="36" r="5"/><circle cx="26" cy="38" r="5"/><path d="M17 32L38 8M23 33L10 8"/></svg></div>
+        <h3>Farm hygiene</h3>
+        <p>Disinfecting pruning shears, cutting tools and irrigation lines, usually as a diluted denatured solution.</p>
+      </article>
+      <article class="card">
+        <div class="ico"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M24 6c4 7 12 11 12 20a12 12 0 0 1-24 0c0-9 8-13 12-20z"/><path d="M24 40V24M24 30l-5-5M24 34l5-5"/></svg></div>
+        <h3>Extraction and industry</h3>
+        <p>A solvent for botanical extracts, cleaning products, inks and coatings, and a component in fuel blends.</p>
+      </article>
+    </div>
+    <div class="docs" aria-label="Ethanol supply formats"><span>Bulk tanker</span><span>1,000-litre IBC</span><span>Drums</span><span>Safety data sheet with every order</span><span>Certificate of analysis</span></div>
+    <p class="src">Farm hygiene and pesticide-ingredient uses: USDA Agricultural Marketing Service, Ethanol technical report (2014).</p>
+  </div>
+</section>
+
+
+<section id="agro">
+  <div class="wrap">
+    <div class="eyebrow">Agro commodities</div>
+    <h2>Agro commodities, quoted per shipment</h2>
+    <p class="lede">We source selected agro commodities from farms and trusted aggregators and supply them to processors, food companies and export buyers. We sell to businesses only (B2B). Origin, grade and packing are confirmed on each quotation, and samples go out before any shipment is agreed.</p>
+    <div class="tablewrap">
+      <table class="t3">
+        <thead><tr><th scope="col">Product</th><th scope="col">Typical form</th><th scope="col">What buyers usually specify</th></tr></thead>
+        <tbody>
+          <tr class="grp"><th colspan="3">Oilseeds, nuts and pulses</th></tr>
+          <tr><th scope="row">Sesame seed</th><td>Natural or hulled</td><td>Purity, moisture, oil content</td></tr>
+          <tr><th scope="row">Groundnut</th><td>In shell or shelled</td><td>Moisture, count per ounce, aflatoxin limit</td></tr>
+          <tr><th scope="row">Cashew nut</th><td>Raw, in shell</td><td>Kernel outturn ratio (KOR), moisture</td></tr>
+          <tr><th scope="row">Soybean</th><td>Whole</td><td>Protein, moisture, foreign matter</td></tr>
+          <tr class="grp"><th colspan="3">Roots, flowers and gums</th></tr>
+          <tr><th scope="row">Ginger</th><td>Dried, split or whole</td><td>Moisture, aflatoxin and pesticide residue limits</td></tr>
+          <tr><th scope="row">Hibiscus</th><td>Dried whole flower</td><td>Colour, moisture, foreign matter</td></tr>
+          <tr><th scope="row">Gum arabic</th><td>Raw or powdered</td><td>Type, grade, moisture</td></tr>
+          <tr class="grp" id="spices"><th colspan="3">Food spices</th></tr>
+          <tr><th scope="row">Cardamom</th><td>Whole green pods</td><td>Pod size, moisture</td></tr>
+          <tr><th scope="row">Black peppercorn</th><td>Whole</td><td>Bulk density, moisture</td></tr>
+          <tr><th scope="row">Star anise</th><td>Whole, dried</td><td>Grade, moisture</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="note">Other food spices and commodities on request. Commodity prices move daily, so we quote per shipment and do not publish a price list. Send us the product, quantity, packing and destination.</div>
+    <h3 class="sub3">Our rules for every export lot</h3>
+    <div class="rules">
+      <div><b>Traceable lots</b>Each lot is recorded by source, kept separate from other lots, and labelled to match its certificate.</div>
+      <div><b>Approved treatments only</b>We require suppliers to use only approved fumigants, to avoid residue rejections at the destination port.</div>
+      <div><b>Samples and checks first</b>You approve a sample before the shipment is agreed. Moisture and quality are checked at loading, and independent inspection can be arranged on request.</div>
+    </div>
+    <div class="docs" aria-label="Export documents"><span>Commercial invoice</span><span>Packing list</span><span>NXP form</span><span>Phytosanitary certificate (NAQS)</span><span>Certificate of origin</span><span>Inspection report on request</span></div>
+    <p class="src">Export documents and handling rules follow NAQS export guidance and published Nigerian export guides.</p>
+  </div>
+</section>
+
+<section id="palm">
+  <div class="wrap">
+    <div class="eyebrow">Palm products</div>
+    <h2>Palm oil, crude and refined</h2>
+    <p class="lede">Palm oil for refiners, food manufacturers, soap and oleochemical makers, and export buyers. We source crude and refined palm oil from mills and refiners and supply businesses at home and abroad, against confirmed orders.</p>
+    <div class="cards">
+      <article class="card">
+        <div class="ico"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M24 5c7 9 12 15 12 22a12 12 0 0 1-24 0c0-7 5-13 12-22z"/><path d="M18 28a6 6 0 0 0 6 6"/></svg></div>
+        <span class="tag">Crude</span>
+        <h3>Crude palm oil (CPO)</h3>
+        <p>For refiners, soap makers and oleochemical plants.</p>
+        <ul><li>Buyers specify free fatty acid (FFA), moisture and impurities</li><li>Bulk tanker or drums</li></ul>
+      </article>
+      <article class="card">
+        <div class="ico"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="24" cy="12" rx="13" ry="5"/><path d="M11 12v24c0 2.8 5.8 5 13 5s13-2.2 13-5V12"/><path d="M11 20c0 2.8 5.8 5 13 5s13-2.2 13-5M11 28c0 2.8 5.8 5 13 5s13-2.2 13-5"/></svg></div>
+        <span class="tag">Refined</span>
+        <h3>Refined palm oil</h3>
+        <p>Refined, bleached and deodorised (RBD) oil sourced from refiners, for cooking-oil packers and food manufacturers.</p>
+        <ul><li>Buyers specify FFA, colour and moisture</li><li>Bulk, drums or packed formats by agreement</li></ul>
+      </article>
+      <article class="card">
+        <div class="ico"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 30h36l-4 10H10z"/><path d="M12 30V20h24v10M20 20v-8h10v8"/></svg></div>
+        <span class="tag">Import and export</span>
+        <h3>Shipments in and out</h3>
+        <p>We quote domestic delivery and export or import shipments, with packing and shipping terms agreed per order.</p>
+        <ul><li>Bulk, ISO tank, flexitank or drums</li><li>Export documents and certificate of analysis per lot</li></ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="biochar">
+  <div class="wrap">
+    <div class="eyebrow">Biochar</div>
+    <h2>Biochar from palm kernel shell</h2>
+    <p class="lede">Biochar is a stable, carbon-rich charcoal made by heating biomass with little oxygen. We are setting up biochar supply from palm kernel shell, a plentiful residue of the palm-oil belt, and we are taking early enquiries for samples and field trials.</p>
+    <div class="cards">
+      <article class="card">
+        <div class="ico"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 41h32"/><path d="M13 41c0-6 4-10 11-10s11 4 11 10"/><path d="M24 31V15"/><path d="M24 21c-6 0-9-3-9-8 6 0 9 3 9 8z"/><path d="M24 25c0-5 3-8 9-8 0 5-3 8-9 8z"/></svg></div>
+        <span class="tag">In development</span>
+        <h3>Where we are</h3>
+        <p>Pilot stage. Samples and trial quantities come first, each with a laboratory test report. Commercial supply follows once production is proven.</p>
+      </article>
+      <article class="card">
+        <div class="ico"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M24 43V22"/><path d="M24 27c-9 0-14-5-14-14 9 0 14 5 14 14z"/><path d="M24 22c0-8 5-12 14-12 0 8-5 12-14 12z"/></svg></div>
+        <h3>What it is for</h3>
+        <p>A soil conditioner that helps acidic, low-fertility soils hold water and nutrients. Also used in growing media and livestock bedding.</p>
+      </article>
+      <article class="card">
+        <div class="ico"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 10h32v22H22l-8 7v-7H8z"/><path d="M16 18h16M16 24h10"/></svg></div>
+        <h3>Who we want to hear from</h3>
+        <p>Farms, nurseries, fertiliser blenders, researchers and carbon-project developers who want to run a trial.</p>
+      </article>
+    </div>
+    <div class="stat">
+      <b>73%</b>
+      <p>carbon in palm kernel shell biochar, up from 46% in the raw shell, in a published Malaysian Palm Oil Board study of slow pyrolysis at 400 to 600 °C. Every trial batch we send carries a laboratory report covering carbon content, pH, ash and moisture.</p>
+    </div>
+    <div class="cta"><a class="btn gold" href="#contact">Request trial samples</a></div>
+    <p class="src">Source: Journal of Oil Palm Research, Palm kernel shell biochar production, characteristics and carbon sequestration potential (2019).</p>
+  </div>
+</section>
+
+<section id="supply">
+  <div class="wrap">
+    <div class="eyebrow">How supply works</div>
+    <h2>From enquiry to delivery</h2>
+    <ol class="steps">
+      <li><b>Enquiry</b><span>Tell us your use, monthly volume and delivery location.</span></li>
+      <li><b>Quotation</b><span>We confirm the specification and send a quotation with a sample certificate of analysis.</span></li>
+      <li><b>Agreement</b><span>Quantity, price and payment terms are agreed in writing. New accounts pay before loading.</span></li>
+      <li><b>Loading and delivery</b><span>The truck is loaded and delivered to your tank or receiving point.</span></li>
+      <li><b>Confirmation</b><span>You sign the delivery note and we issue the invoice.</span></li>
+    </ol>
+    <div class="docs" aria-label="Documents with each delivery"><span>Certificate of analysis</span><span>Safety data sheet (CO₂, ethanol)</span><span>Delivery note</span><span>Waybill</span><span>Invoice</span></div>
+    <div class="card" style="margin-top:28px">
+      <span class="tag">Before the first load</span>
+      <h3>What your site needs to receive a tanker</h3>
+      <ul class="checks">
+        <li>A receiving tank with room for a full load, about 21,000 litres, or an agreed split across tanks</li>
+        <li>A road a loaded 30-tonne tanker can use, and a gate open at the agreed time</li>
+        <li>A pump or gravity connection for unloading, and a weighbridge or another agreed way to weigh the load</li>
+        <li>A named person to receive the truck and sign the delivery note</li>
+      </ul>
+      <p class="src" style="margin-top:14px;margin-bottom:0">No bulk tank? Ask about 1,000-litre IBCs, about 1.4 tonnes each. Moving them needs a forklift or pallet truck.</p>
+    </div>
+    <div class="card" style="margin-top:28px">
+      <span class="tag">Every product</span>
+      <h3>The same steps for every product</h3>
+      <p style="margin-bottom:0">Quotation, written agreement, loading, delivery and invoice follow the same path. CO₂ and ethanol orders also carry a safety data sheet, and export orders carry the export documents.</p>
+    </div>
+  </div>
+</section>
+
+<section id="about" style="background:var(--tint)">
+  <div class="wrap">
+    <div class="eyebrow">About us</div>
+    <h2>Sammas Multiconcept Global Industries Ltd</h2>
+    <p class="lede">We are a Lagos-based supplier of molasses, industrial inputs and agro commodities, registered with the Corporate Affairs Commission (RC 1494274). Our team comes from distilling, food and chemical production, so we know how feedstock quality shows up on the plant floor, and we write our offers and delivery documents with that in mind.</p>
+    <div class="cards">
+      <article class="card"><h3>Terms in writing</h3><p>Quantity, price, delivery and payment terms are written down and agreed before the truck is loaded.</p></article>
+      <article class="card"><h3>A paper trail per load</h3><p>Each delivery travels with a delivery note, waybill and invoice. You sign for what you receive.</p></article>
+      <article class="card"><h3>Certificate of analysis</h3><p>Available for each batch, so your quality team can check the figures before and after unloading.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="cta-band">
+  <div class="wrap">
+    <div><h2>Tell us your monthly volume</h2><p>We reply with a written quotation, including delivery to your tank.</p></div>
+    <a class="btn gold" href="#contact">Request a quote</a>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="eyebrow">Contact</div>
+    <h2>Request a quotation</h2>
+    <p class="lede">Fill in the form and your enquiry is prepared as a message. Send it by WhatsApp or email, or copy it.</p>
+    <div class="contact-grid">
+      <div class="panel">
+        <h3>Sammas Multiconcept Global Industries Ltd</h3>
+        <dl class="kv">
+          <dt>Address</dt><dd>11 Oshogbo Street, Off Celestial Avenue, Ogudu, Kosofe LGA, Lagos, Nigeria</dd>
+          <dt>Telephone</dt><dd>07051863925 · 07061524575</dd>
+          <dt>WhatsApp</dt><dd><a href="https://wa.me/2347051863925" target="_blank" rel="noopener">+234 705 186 3925</a></dd>
+          <dt>Email</dt><dd>sammasmulticonceptglobal.ind@gmail.com</dd>
+          <dt>CAC</dt><dd>RC 1494274</dd>
+        </dl>
+        <p class="src" style="margin-top:16px">Always confirm any payment account by telephone before you pay. We do not change bank details by message alone.</p>
+      </div>
+      <form class="panel" id="enq" autocomplete="off">
+        <h3>Enquiry details</h3>
+        <label for="f-company">Company</label>
+        <input id="f-company" name="company" type="text" placeholder="Company name">
+        <div class="row2">
+          <div><label for="f-product">Supply type</label>
+            <select id="f-product"><optgroup label="Industrial inputs"><option>Molasses, bulk tanker</option><option>Molasses, 1,000-litre IBC</option><option>Molasses, export</option><option>Urea (46% N)</option><option>Liquid CO₂, bulk</option><option>CO₂ cylinders</option><option>Dry ice</option><option>Crude ethanol</option><option>Denatured ethanol</option></optgroup><optgroup label="Agro commodities"><option>Sesame seed</option><option>Groundnut</option><option>Raw cashew nut</option><option>Soybean</option><option>Dried ginger</option><option>Dried hibiscus flower</option><option>Gum arabic</option><option>Cardamom</option><option>Black peppercorn</option><option>Star anise</option><option>Other agro commodity</option></optgroup><optgroup label="Palm and biochar"><option>Crude palm oil</option><option>Refined palm oil</option><option>Biochar trial samples</option></optgroup></select></div>
+          <div><label for="f-qty">Monthly quantity</label>
+            <input id="f-qty" type="text" placeholder="e.g. 60 tonnes"></div>
+        </div>
+        <div class="row2">
+          <div><label for="f-loc">Delivery location</label>
+            <input id="f-loc" type="text" placeholder="Town and state"></div>
+          <div><label for="f-use">Use</label>
+            <input id="f-use" type="text" placeholder="e.g. pellet binder, fertiliser, farm hygiene"></div>
+        </div>
+        <div class="btns"><button class="btn" type="submit">Prepare enquiry</button></div>
+        <div class="out" id="out">
+          <label for="f-msg">Your message</label>
+          <textarea id="f-msg" readonly></textarea>
+          <div class="btns">
+            <a class="btn gold" id="wa" href="https://wa.me/2347051863925" target="_blank" rel="noopener">Send on WhatsApp</a>
+            <a class="btn line" id="em" href="mailto:sammasmulticonceptglobal.ind@gmail.com">Send by email</a>
+            <button class="btn line" type="button" id="cp">Copy message</button>
+          </div>
+          <div class="flash" id="flash" role="status"></div>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div><b>Sammas Multiconcept Global Industries Ltd</b><br>RC 1494274 · Lagos, Nigeria</div>
+    <div>11 Oshogbo Street, Off Celestial Avenue, Ogudu, Kosofe LGA, Lagos<br>07051863925 · 07061524575</div>
+    <div>© 2026 Sammas Multiconcept Global Industries Ltd<br>Images on this site are illustrative.</div>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/2347051863925" target="_blank" rel="noopener" aria-label="Chat with Sammas on WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.6.8-.8 1-.3.2-.5.1a6.700 6.700 0 0 1-3.300-2.900c-.2-.4.2-.4.7-1.300.1-.2 0-.3 0-.4l-.8-1.800c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.200 5.200 5.200 0 0 0 1.100 2.800 11.900 11.900 0 0 0 4.600 4c1.700.7 2.400.8 3.200.7a2.700 2.700 0 0 0 1.800-1.300 2.200 2.200 0 0 0 .2-1.300c-.1-.1-.3-.2-.5-.3z"/></svg><span>WhatsApp</span></a>
+
+<script>
+(function(){
+  var form=document.getElementById('enq'),out=document.getElementById('out'),msg=document.getElementById('f-msg'),
+      wa=document.getElementById('wa'),em=document.getElementById('em'),cp=document.getElementById('cp'),fl=document.getElementById('flash');
+  function val(id){return (document.getElementById(id).value||'').trim()}
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    var t='Hello Sammas Multiconcept Global,\n\nI would like a quotation.\n'+
+      'Company: '+(val('f-company')||'-')+'\n'+
+      'Supply type: '+val('f-product')+'\n'+
+      'Monthly quantity: '+(val('f-qty')||'-')+'\n'+
+      'Delivery location: '+(val('f-loc')||'-')+'\n'+
+      'Use: '+(val('f-use')||'-')+'\n\nPlease confirm specification and availability.';
+    msg.value=t;
+    wa.href='https://wa.me/2347051863925?text='+encodeURIComponent(t);
+    em.href='mailto:sammasmulticonceptglobal.ind@gmail.com?subject='+encodeURIComponent('Quotation request: '+val('f-product'))+'&body='+encodeURIComponent(t);
+    out.classList.add('show');fl.textContent='';
+  });
+  cp.addEventListener('click',function(){
+    function sel(){msg.focus();msg.select();fl.textContent='Select and copy the text above.'}
+    try{navigator.clipboard.writeText(msg.value).then(function(){fl.textContent='Copied.'},sel)}catch(x){sel()}
+  });
+})();
+</script>
+
+<script>
+(function(){
+  var root=document.documentElement;
+  var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(reduce){document.querySelectorAll('video.photo').forEach(function(v){v.removeAttribute('autoplay');v.pause()})}
+  if(!('IntersectionObserver' in window)||reduce){root.classList.remove('js');return}
+  var io=new IntersectionObserver(function(es){
+    es.forEach(function(e){
+      if(!e.isIntersecting)return;
+      var el=e.target;io.unobserve(el);el.classList.add('in');
+      setTimeout(function(){el.classList.remove('rv','in')},700);
+    });
+  },{threshold:.1,rootMargin:'0px 0px -4% 0px'});
+  document.querySelectorAll('section h2,section .lede,.card,.steps li,.panel,.stat,.tablewrap').forEach(function(el){el.classList.add('rv');io.observe(el)});
+})();
+</script>
+
+</body>
+</html>
